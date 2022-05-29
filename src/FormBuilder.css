@@ -1,0 +1,72 @@
+#parentContainer {
+  margin: 5vh 10vw;
+  border: #bee9f2 2px solid;
+  border-radius: 5px;
+}
+
+#title {
+  background-color: #d9eef7;
+  color: #196990;
+  text-align: left;
+  border-bottom: #bee9f2 2px solid;
+}
+
+#form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, 5vh) 1fr repeat(2, 5vh);
+  row-gap: 4vh;
+  margin: 3vh;
+  align-items: center;
+}
+
+.formLabel {
+  justify-self: center;
+}
+
+#choices {
+  resize: vertical;
+}
+
+.formInput {
+  justify-self: left;
+  border: #dadada 1px solid;
+  border-radius: 5px;
+  min-height: 3vh;
+  width: 50%;
+  font-size: 1em;
+}
+
+#typeContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-flow: row wrap;
+}
+
+#buttonContainer {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+
+#submitButton {
+  background-color: #46ab47;
+  border: #46ab47 solid 1px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+#cancelButton {
+  background: none;
+  border: none;
+  color: #f00;
+}
+
+#buttonContainer,
+#submitButton,
+#cancelButton {
+  font-size: 1.2rem;
+}
